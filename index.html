@@ -12,8 +12,8 @@
 <body>
 
   <nav>
-    <button><img src="images/layers.svg" alt=""></button>
-    <button><img src="images/grid.svg" alt=""></button>
+    <button class="list-btn"><img src="images/layers.svg" alt=""></button>
+    <button class="grid-btn"><img src="images/grid.svg" alt=""></button>
   </nav>
 
   <section class="grid">
@@ -22,75 +22,115 @@
 
 
     <article class="card">
+      
+      <div class="card-content-container">
       <h2 class="card-title">Best Boot</h2>
       <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus dignissimos, reiciendis perspiciatis repellendus vel officiis repellat eaque? Ipsam modi consequatur.</p>
       <p class="card-price card-price_special">35£</p>
       <a class="card-link" href="#">Add to cart</a>
+      </div>
+      
+      <div class="card-media-container">
       <img class="card-image" src="images/boot-1.jpg" alt="" width="200" height="200">
+      </div>
+
     </article>
 
     <article class="card">
+      <div class="card-content-container">
       <h2 class="card-title">Best Boot</h2>
       <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus dignissimos, reiciendis perspiciatis repellendus vel officiis repellat eaque? Ipsam modi consequatur.</p>
       <p class="card-price">35£</p>
-      <a class="card-link" href="#">Add to cart</a>
-      <img class="card-image" src="images/boot-1.jpg" alt="">
+      <a class="card-link" href="#">Add to cart</a></div>
+      <div class="card-media-container">
+      <img class="card-image" src="images/boot-1.jpg" alt=""></div>
     </article>
 
     <article class="card">
+      <div class="card-content-container">
       <h2 class="card-title">Best Boot</h2>
       <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus dignissimos, reiciendis perspiciatis repellendus vel officiis repellat eaque? Ipsam modi consequatur.</p>
       <p class="card-price">35£</p>
-      <a class="card-link" href="#">Add to cart</a>
-      <img class="card-image" src="images/boot-1.jpg" alt="">
+      <a class="card-link" href="#">Add to cart</a></div>
+      <div class="card-media-container">
+
+      <img class="card-image" src="images/boot-1.jpg" alt=""></div>
     </article>
 
     <article class="card">
+      <div class="card-content-container">
       <h2 class="card-title">Best Boot</h2>
       <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus dignissimos, reiciendis perspiciatis repellendus vel officiis repellat eaque? Ipsam modi consequatur.</p>
       <p class="card-price">35£</p>
-      <a class="card-link" href="#">Add to cart</a>
-      <img class="card-image" src="images/boot-1.jpg" alt="">
+      <a class="card-link" href="#">Add to cart</a></div>
+      <div class="card-media-container"><img class="card-image" src="images/boot-1.jpg" alt=""></div>
     </article>
 
     <article class="card">
+      <div class="card-content-container">
       <h2 class="card-title">Best Boot</h2>
       <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus dignissimos, reiciendis perspiciatis repellendus vel officiis repellat eaque? Ipsam modi consequatur.</p>
       <p class="card-price">35£</p>
-      <a class="card-link" href="#">Add to cart</a>
-      <img class="card-image" src="images/boot-1.jpg" alt="">
+      <a class="card-link" href="#">Add to cart</a></div>
+      <div class="card-media-container"><img class="card-image" src="images/boot-1.jpg" alt=""></div>
     </article>
 
     <article class="card">
+      <div class="card-content-container">
       <h2 class="card-title">Best Boot</h2>
       <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus dignissimos, reiciendis perspiciatis repellendus vel officiis repellat eaque? Ipsam modi consequatur.</p>
       <p class="card-price">35£</p>
-      <a class="card-link" href="#">Add to cart</a>
-      <img class="card-image" src="images/boot-1.jpg" alt="">
+      <a class="card-link" href="#">Add to cart</a></div>
+      <div class="card-media-container"><img class="card-image" src="images/boot-1.jpg" alt=""></div>
     </article>
 
     <article class="card">
+      <div class="card-content-container">
       <h2 class="card-title">Best Boot</h2>
       <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus dignissimos, reiciendis perspiciatis repellendus vel officiis repellat eaque? Ipsam modi consequatur.</p>
       <p class="card-price">35£</p>
-      <a class="card-link" href="#">Add to cart</a>
-      <img class="card-image" src="images/boot-1.jpg" alt="">
+      <a class="card-link" href="#">Add to cart</a></div>
+      <div class="card-media-container"><img class="card-image" src="images/boot-1.jpg" alt=""></div>
     </article>
 
     <article class="card">
+      <div class="card-content-container">
       <h2 class="card-title">Best Boot</h2>
       <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat accusamus dignissimos, reiciendis perspiciatis repellendus vel officiis repellat eaque? Ipsam modi consequatur.</p>
       <p class="card-price">35£</p>
-      <a class="card-link" href="#">Add to cart</a>
-      <img class="card-image" src="images/boot-1.jpg" alt="">
+      <a class="card-link" href="#">Add to cart</a></div>
+      <div class="card-media-container"><img class="card-image" src="images/boot-1.jpg" alt=""></div>
     </article>
 
   </section>
 
   <script>
+/* plain JS */
+    console.log("-- grid selector---");
 
-    console.log("grid selector");
-    $("li.special").css("border", "10px solid pink");
+  /*jQuery*/
+
+    $(".list-btn").click(
+      function() {
+         // select the grid container
+         $("section.grid").addClass("grid-list");
+         
+         // add .list-grid class to it
+       
+         console.log("clicked LIST btn");
+      }
+    );
+    
+    $(".grid-btn").click(
+      function() {
+       // select a grid container
+       // remove .list-grid class from it
+     
+       $("section.grid").removeClass("grid-list"); 
+      
+       console.log("clicked GRID btn");
+      }
+    );
 
   </script>
 </body>
